@@ -56,7 +56,7 @@ header a {
   list-style-type: none;
 }
 
-#menu>li {
+#menu > li {
   margin-bottom: 1em;
 }
 
@@ -70,7 +70,7 @@ nav {
   background-color: #ffffff;
   width: 100%;
   left: 0;
-  padding-left: 1rem;
+  padding: 0 1rem;
   box-shadow: 0 2px 2px #3a3a3a;
   display: none;
   top: 100%;
@@ -97,6 +97,9 @@ main {
   flex: 1 0 auto;
   /* Push main content down below header */
   margin-top: 47px;
+  /* Enable flex properties for child elements */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero section */
@@ -184,7 +187,7 @@ main {
   Each div will expand to fill the available space on its row */
   flex-basis: 200px;
   flex-grow: 1;
-  /* Creates a grid of meetup timews divs over the background image */
+  /* Creates a grid of meetup time divs over the background image */
   border: 2px solid white;
 }
 
@@ -342,6 +345,19 @@ main {
   /* Gallery */
   #photos {
     column-count: 3;
+  }
+
+  /* Signup */
+  #signup {
+    background-position: center;
+    position: relative;
+  }
+
+  #signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
   }
 
 }
