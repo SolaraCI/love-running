@@ -190,7 +190,7 @@ main {
 
 #times h3 {
   /* Override the heading colour set in general styles */
-  color:#fafafa;
+  color: #fafafa;
 }
 
 /* Gallery page */
@@ -201,6 +201,55 @@ main {
 
 #photos {
   line-height: 0;
+}
+
+/* Signup */
+#signup {
+  background: url("../images/signup-image.webp");
+  background-size: cover;
+  background-position: 75%;
+  display: flex;
+  flex-grow: 1;
+  padding: 20px 10% 30px 10%;
+  flex-direction: column;
+}
+
+#signup-form {
+  color: #ffffff;
+  background-color: rgba(60, 60, 60, .6);
+  padding: 30px;
+}
+
+#signup-form h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  background-color: transparent;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  color: #fafafa;
+  height: 25px;
+  width: 100%;
+  padding: 0 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.join-button {
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  padding: 15px 32px;
+  margin-top: 20px;
 }
 
 /* Footer */
@@ -304,7 +353,7 @@ main {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
-  
+
   /* Gallery */
   #photos {
     column-count: 4;
@@ -312,30 +361,31 @@ main {
 }
 
 /* Media query: laptops and larger (1200px and up) */
-@media screen and (min-width: 1200px) {    
+@media screen and (min-width: 1200px) {
+
   /* Reasons section */
   #benefits {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
-  #benefits > div {
-      flex: 1;
+  #benefits>div {
+    flex: 1;
   }
 
   #benefits-image {
-      order: 0
+    order: 0
   }
 
   #benefits-mental {
-      order: 1;
+    order: 1;
   }
 
-  #benefits-mental > div {
-      align-self: flex-start;
+  #benefits-mental>div {
+    align-self: flex-start;
   }
 
-  #benefits-physical > div {
-      align-self: flex-end;
+  #benefits-physical>div {
+    align-self: flex-end;
   }
 }
